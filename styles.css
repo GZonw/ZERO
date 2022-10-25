@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+* a{
+  text-decoration:none;
+}
+* li{
+  list-style:none;
+}
+.container{
+  position: relative;
+  min-height:100vh;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.bg::after{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:url('https://pbs.twimg.com/media/Ff6KLUjUcAAMi7O?format=jpg&name=900x900');
+  z-index:-1;
+  background-size:cover;
+  background-position:center;
+  filter: brightness(45%);
+}
+.menu{
+  position: relative;
+  width: 85%;
+  height: 10vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo a{
+  font-family:Lucida Handwriting;
+  font-size:2.4rem;
+  color: #fff
+}
+.menu ul{
+  display:flex;
+}
+.menu ul li{
+   margin: 0 25px;
+}
+.menu ul li a{
+  font-size:1.3rem;
+  font-family:arial;
+  font-weight:bold;
+  color: #fff;
+}
+
+/* Content */
+
+.content{
+  width:85%;
+  margin: 0 auto;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  display:flex;
+}
+.content .header,.grid-card{
+  width: 50%;
+  position: relative;
+}
+.content .header{
+  color: #fff;
+}
+.content .header img{
+  border-radius:10px;
+}
+.content .header h2{
+  font-family:arial;
+  font-size: 3.5rem;
+  letter-spacing:2px;
+}
+.content .header h1{
+  font-family:arial;
+  font-size: 5rem;
+}
+.content .header p{
+  font-family:arial;
+  font-size: 1.4rem;
+  opacity:.6;
+}
+.grid-card{
+  display: grid;
+  grid-template-columns:auto auto;
+  grid-gap:25px;
+}
+.grid-card .box{
+  width: 100%;
+  height: 230px;
+  background-position:center;
+  background-size:cover;
+  border-radius:10px;
+  position: relative;
+}
+.content .box h2{
+  position:absolute;
+  bottom: 10px;
+  left: 15px;
+  font-family:Lucida Handwriting;
+  font-size: 1.2rem;
+  color: #151515;
+}
+.content .box:hover{
+  transform: translatey(-7%);
+  transition: .5s;
+}
+.resume{
+  background-image:Nawaphon_Phatthaisong.png;
+  width: 1414px;
+  height: 2100px;
+  background-position:center;
+  background-size:cover;
+  border-radius:10px;
+  position: relative;
+}
